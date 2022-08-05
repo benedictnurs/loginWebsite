@@ -1,0 +1,128 @@
+@media only screen and (max-width:880px) {
+    .desktop {
+      position: absolute;
+      left: -1000px;
+  }
+    .loginBtn{
+        position: absolute;
+        left: -1000px;
+    }
+
+}
+
+@media only screen and (min-width:880px) {
+    .menuBtn{
+      position: absolute;
+      left: -1000px;
+  }
+
+
+
+}
+
+#logo{
+    width: 50px;
+    border: 2px solid black;
+    cursor: pointer;
+    margin: 20px;
+    margin-top: -15px;
+}
+
+#logo:hover{
+    transform: rotate(360deg);
+    transition: .9s;
+}
+
+
+header{
+    display: grid;
+    grid-template-columns:auto 1fr auto;
+    padding: 5px 0px;
+    padding-top: 2%;
+    z-index: 2;
+    width: 100%;    
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+}
+
+header nav.desktop{
+    text-align: center;
+}
+
+header nav.right{
+    text-align: right;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    margin-left: 5%;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid black;
+
+}
+
+.right a:hover{
+    border-radius: 10px;
+    background-color: dodgerblue;    
+    padding: 5px;
+    transition: .8s;
+    padding-left: 20px;
+    color: white;
+    padding-right: 20px;
+    margin: 10px;
+}
+
+.hover-underline-animation {
+    position: relative;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+
+.loginBtn.active{
+    color: white;
+    border-radius: 10px;
+    background-color: dodgerblue;    
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
+  }
+
+  .loginBtn{
+    transition: .8s;
+  }
+
+
+  .menuBtn.active{
+    color: white;
+    border-radius: 10px;
+    background-color: dodgerblue;    
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
+  }
+
+  .menuBtn{
+    transition: .8s;
+  }
